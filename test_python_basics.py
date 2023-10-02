@@ -24,12 +24,10 @@ def test_rectangle():
 
     # TODO сосчитайте периметр
     perimeter = (a + b) * 2
-    print(f"{perimeter=}")
     assert perimeter == 60
 
     # TODO сосчитайте площадь
     area = a * b
-    print(f"{area=}")
     assert area == 200
 
 
@@ -42,10 +40,12 @@ def test_circle():
     r = 23
     # TODO сосчитайте площадь
     area = math.pi * r ** 2
+    print(f"Площадь круга: {area}")
     assert area == 1661.9025137490005
 
     # TODO сосчитайте длину окружности
     length = 2 * math.pi * r
+    print(f"Длина окружности: {length}")
     assert length == 144.51326206513048
 
 
