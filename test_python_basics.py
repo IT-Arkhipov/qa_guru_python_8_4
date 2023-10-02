@@ -10,6 +10,7 @@ def test_greeting():
     # output = "Привет, {}! Тебе {} лет.".format(name, age)
 
     # Проверяем результат
+    print(output)
     assert output == "Привет, Анна! Тебе 25 лет."
 
 
@@ -23,10 +24,12 @@ def test_rectangle():
 
     # TODO сосчитайте периметр
     perimeter = (a + b) * 2
+    print(f"{perimeter=}")
     assert perimeter == 60
 
     # TODO сосчитайте площадь
     area = a * b
+    print(f"{area=}")
     assert area == 200
 
 
@@ -94,5 +97,6 @@ def test_dicts():
     # TODO создайте словарь
     d = dict(zip(first, second))
 
+    print(d.values())
     assert isinstance(d, dict)
     assert len(d) == 5
